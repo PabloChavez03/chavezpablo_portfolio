@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-nav {
+    background-color: #1A635C;
+}
+
+.text-pdf {
+    --text-tw-opacity: 1;
+    color: #1A635C / var(--text-tw-opacity);
+}
+
+body {
+    background-color: #135F5A;
+}
+
