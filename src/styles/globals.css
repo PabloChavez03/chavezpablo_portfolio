@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Merriweather";
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+}
+
 .bg-nav {
     background-color: #1A635C;
 }
@@ -14,4 +19,5 @@
 body {
     background-color: #135F5A;
 }
+
 

@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="bg-nav p-8">
+    <nav className="bg-nav p-6 w-screen">
       <div className="container flex flex-wrap justify-between mx-auto">
         <div className="flex">
           <p className="text-gray-200">
