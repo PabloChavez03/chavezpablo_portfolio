@@ -1,15 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kanit:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "Merriweather";
-    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-}
-
-.bg-nav {
+/* .bg-nav {
     background-color: #1A635C;
-}
+} */
 
 .text-pdf {
     --text-tw-opacity: 1;

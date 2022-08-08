@@ -6,8 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        deepGreen: {
+          900: '#1A635C',
+        }
+      },
       fontFamily: {
-        merriweather: ["Merriweather", "serif"],
+        mukta: ["Mukta", 'sans-serif'],
+        josefin: ["Josefin Sans", 'sans-serif']
       },
       animation: {
         text: "text 2.5s ease infinite",
