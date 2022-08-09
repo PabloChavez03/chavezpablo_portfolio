@@ -6,7 +6,6 @@ export default function Layout({ children }) {
     <div className='flex flex-col h-screen'>
       <Navbar/>
       { children }
-      {console.log(children.type.name)}
       {children.type.name === 'Bienvenida'? (
         <Footer/>
       ) : null}

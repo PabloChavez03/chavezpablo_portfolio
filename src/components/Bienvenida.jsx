@@ -11,7 +11,7 @@ export default function Bienvenida() {
       <div className="col-start-1 col-end-5 m-5 p-10">
         <div className="mb-4">
           <div className="mb-4">
-            <h1 className="text-amber-400 font-mono">Divide y conquistaras</h1>
+            <h1 className="text-amber-400 font-mono">Divide y conquistarás</h1>
           </div>
           <h1 className="font-serif text-6xl text-gray-200">
             Full Stack Developer
@@ -27,10 +27,10 @@ export default function Bienvenida() {
         </div>
         <div className="flex items-center mt-2 py-2">
           <div className="py-2">
-            <ButtonCV text={"Sobre mi"} path={'/about'}/>
+            <ButtonCV text={"Sobre mí"} path={'/about'}/>
           </div>
           <div className="ml-9">
-            <AiOutlineMinus className="text-gray-200" size={30} />
+            <AiOutlineMinus className="text-gray-200 transition-colors duration-75 hover:text-amber-400" size={30} />
           </div>
           <div className="flex flex-row ml-4">
             <div>

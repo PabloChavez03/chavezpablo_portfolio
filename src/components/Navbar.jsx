@@ -1,6 +1,5 @@
-import Link from 'next/link'
+import Link from "next/link";
 import ButtonCV from "./utils/ButtonCV";
-
 
 export default function Navbar() {
   return (
@@ -12,20 +11,24 @@ export default function Navbar() {
           </p>
         </div>
         <ul className="flex flex-row font-mukta text-lg">
-          <li className="px-4 py-2 text-gray-200 hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
-            <Link href={'/'}><a>Bienvenida</a></Link>
-          </li>
-          <li className="px-4 py-2 text-gray-200 hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
-            <Link href={'/about'}><a>Sobre mi</a></Link>
-          </li>
-          <li className="px-4 py-2 text-gray-200 hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
-            <a href="#">Proyectos</a>
-          </li>
+          <Link href={"/"}>
+            <li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
+              <a>Bienvenida</a>
+            </li>
+          </Link>
+          <Link href={"/about"}>
+            <li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
+              <a>Sobre mí</a>
+            </li>
+          </Link>
+          <Link href={'projects'}><li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
+            <a>Proyectos</a>
+          </li></Link>
           <li className="px-4 py-2 text-gray-200 hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
             <a href="#">Contactame</a>
           </li>
         </ul>
-        <ButtonCV text={'Descargar CV'} path={'#_'}/>
+        <ButtonCV text={"Descargar CV"} path={"#_"} />
       </div>
     </nav>
   );
