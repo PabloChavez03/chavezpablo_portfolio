@@ -12,23 +12,23 @@ export default function Navbar() {
         </div>
         <ul className="flex flex-row font-mukta text-lg">
           <Link href={"/"}>
-            <li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
+            <li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
               <a>Bienvenida</a>
             </li>
           </Link>
           <Link href={"/about"}>
-            <li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
+            <li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
               <a>Sobre mí</a>
             </li>
           </Link>
-          <Link href={'projects'}><li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
+          <Link href={'projects'}><li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
             <a>Proyectos</a>
           </li></Link>
-          <li className="px-4 py-2 text-gray-200 hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300  active:border-amber-400 active:text-amber-400">
+          <li className="px-4 py-2 text-gray-200 hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
             <a href="#">Contactame</a>
           </li>
         </ul>
-        <ButtonCV text={"Descargar CV"} path={"#_"} />
+        <ButtonCV text={"Descargar CV"} path={'CV-Pablo-Chavez.pdf'} name={'CV'}/>
       </div>
     </nav>
   );
