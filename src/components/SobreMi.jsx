@@ -19,7 +19,7 @@ export default function SobreMi() {
       <div className="col-start-4 col-end-8 m-5 mr-14 p-10 rounded-lg">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between items-center">
-            <h1 className="mb-8 text-4xl">Sobre mí</h1>
+            <h1 className="mb-8 text-4xl font-josefin selection:bg-green-400 selection:text-green-900 transition-colors hover:text-green-900">Sobre mí</h1>
             <div className="mb-8">
               <ButtonAbout path={'/projects'} text={'Mis proyectos'}/>
             </div>

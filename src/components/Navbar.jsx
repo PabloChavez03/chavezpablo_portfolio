@@ -21,12 +21,12 @@ export default function Navbar() {
               <a>Sobre mí</a>
             </li>
           </Link>
-          <Link href={'projects'}><li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
+          <Link href={'/projects'}><li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
             <a>Proyectos</a>
           </li></Link>
-          <li className="px-4 py-2 text-gray-200 hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
-            <a href="#">Contactame</a>
-          </li>
+          <Link href={'/contact'}><li className="px-4 py-2 text-gray-200 cursor-pointer hover:border-b hover:border-amber-400 hover:text-amber-400 transition-colors duration-300">
+            <a>Contáctame</a>
+          </li></Link>
         </ul>
         <ButtonCV text={"Descargar CV"} path={'CV-Pablo-Chavez.pdf'} name={'CV'}/>
       </div>

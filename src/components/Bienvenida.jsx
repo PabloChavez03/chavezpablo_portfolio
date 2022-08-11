@@ -66,7 +66,7 @@ export default function Bienvenida() {
           </div>
         </div>
       </div>
-      <div className="col-start-5 col-end-8 m-5 p-5 max-w-sm">
+      <div className="col-start-5 col-end-8 m-5 p-5 max-w-md">
         <Image src={profilePic} alt={"profile picture"} className="" />
       </div>
     </div>

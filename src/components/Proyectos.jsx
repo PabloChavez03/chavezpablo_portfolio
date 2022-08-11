@@ -21,7 +21,7 @@ export default function Proyectos() {
           Proyectos
         </h1>
       </div>
-      <div className="flex justify-between border-y-2 transition-colors hover:border-green-900">
+      <div className="flex justify-between border-y-2 transition-colors hover:border-green-900 hover:border-opacity-50">
         <div className="flex w-2/6 m-4 mr-10 py-14">
           <Image
             src={clothes22Pic}
@@ -54,7 +54,8 @@ export default function Proyectos() {
             descuentos a productos. Gestión y envío de boletines informativos.
             Administración de carrito de compras y órdenes de productos.
             Administración de usuarios y gestión de claves. Para la toma de
-            decisiones del proyecto optamos por metodologías ágiles con sprints semanales (SCRUM).
+            decisiones del proyecto optamos por metodologías ágiles con sprints
+            semanales (SCRUM).
           </p>
           <div>
             <h1 className="text-lg pt-3 font-josefin selection:bg-green-400 selection:text-green-900">
@@ -63,51 +64,86 @@ export default function Proyectos() {
             <div className="flex justify-center text-sm ">
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiReact />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://es.reactjs.org/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   React
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiRedux />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href={"https://es.redux.js.org/"}
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 cursor-pointer selection:bg-green-400 selection:text-green-900"
+                >
                   Redux
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiNodedotjs />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://nodejs.org/es/"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   Node
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiExpress />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="http://expressjs.com/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   Express
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiPostgresql />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://www.postgresql.org/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   PostgreSQL
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiSequelize />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://sequelize.org/"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   Sequelize
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiPassport />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://www.passportjs.org/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   Passport
-                </h1>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between border-y-2 transition-colors hover:border-green-900">
+      <div className="flex flex-row justify-between border-y-2 transition-colors hover:border-green-900 hover:border-opacity-50">
         <div className="flex w-2/6 m-4 mr-10 py-10">
           <Image
             src={piFoodPic}
@@ -135,13 +171,22 @@ export default function Proyectos() {
             Desarrollo de una SPA (Single Page Application) utilizando React
             para el Front End y Redux como state management. Todos los
             componentes fueron desarrollados con CSS sin uso de librerias
-            externas. La SPA consume datos de una base de datos PostgreSQL a través
-            de un Back End desarrollado en NodeJS utilizando Express. Algunos características
-            del proyecto: Cache de búsquedas, ordenamientos y filtros,
-            formulario controlado para creación de recetas.
+            externas. La SPA consume datos de una base de datos PostgreSQL a
+            través de un Back End desarrollado en NodeJS utilizando Express.
+            Algunos características del proyecto: Cache de búsquedas,
+            ordenamientos y filtros, formulario controlado para creación de
+            recetas.
           </p>
           <p className="text-right text-slate-500 tracking-wide font-mukta pr-4 indent-4 selection:bg-green-400 selection:text-green-900 italic">
-            Las recetas originales son extraidas de <a className="text-blue-600 after:content-['_↗'] ..." href="https://spoonacular.com/food-api" target="_blank" rel="noreferrer">spoonacular</a>
+            Las recetas originales son extraidas de{" "}
+            <a
+              className="text-blue-600 after:content-['_↗'] ..."
+              href="https://spoonacular.com/food-api"
+              target="_blank"
+              rel="noreferrer"
+            >
+              spoonacular
+            </a>
           </p>
           <div>
             <h1 className="text-lg pt-3 font-josefin selection:bg-green-400 selection:text-green-900">
@@ -150,39 +195,69 @@ export default function Proyectos() {
             <div className="flex justify-center text-sm">
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiReact />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://es.reactjs.org/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   React
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiRedux />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href={"https://es.redux.js.org/"}
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 cursor-pointer selection:bg-green-400 selection:text-green-900"
+                >
                   Redux
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiNodedotjs />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://nodejs.org/es/"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   Node
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiExpress />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="http://expressjs.com/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   Express
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiPostgresql />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://www.postgresql.org/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   PostgreSQL
-                </h1>
+                </a>
               </div>
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
                 <SiSequelize />
-                <h1 className="px-1 selection:bg-green-400 selection:text-green-900">
+                <a
+                  href="https://sequelize.org/"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
                   Sequelize
-                </h1>
+                </a>
               </div>
             </div>
           </div>
