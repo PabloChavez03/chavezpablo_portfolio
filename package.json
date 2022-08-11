@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "dotenv": "^16.0.1",
     "leaflet": "^1.8.0",
     "mapbox-gl": "^2.9.2",
     "next": "12.2.3",
