@@ -28,7 +28,7 @@ export default function Navbar() {
             <a>Contáctame</a>
           </li></Link>
         </ul>
-        <ButtonCV text={"Descargar CV"} path={'CV-Pablo-Chavez.pdf'} name={'CV'}/>
+        <ButtonCV text={"Descargar CV"} path={'https://drive.google.com/file/d/1idb6qGnblRpjzT90rEuOMhS2LL_Uk-zM/view?usp=sharing'} window={'_blank'} relation={'noreferrer'}/>
       </div>
     </nav>
   );
