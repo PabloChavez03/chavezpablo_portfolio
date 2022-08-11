@@ -55,18 +55,26 @@ export default function Contactame() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(input);
-    setInput({
-      user_name: '',
-      user_email: '',
-      message: '',
-    })
-    // emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.YOUR_PUBLIC_KEY)
-    //   .then((result) => {
+    // emailjs
+    //   .sendForm(
+    //     process.env.YOUR_SERVICE_ID,
+    //     process.env.YOUR_TEMPLATE_ID,
+    //     form.current,
+    //     process.env.YOUR_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     (result) => {
     //       console.log(result.text);
-    //   }, (error) => {
+    //     },
+    //     (error) => {
     //       console.log(error.text);
-    //   });
+    //     }
+    //   );
+    setInput({
+      user_name: "",
+      user_email: "",
+      message: "",
+    });
   };
 
   return (
@@ -81,10 +89,9 @@ export default function Contactame() {
             <div className="flex flex-col pb-4 mb-2">
               <h1 className="text-4xl py-2 pb-4 font-josefin">Contáctame</h1>
               <p className="font-mukta">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore laboriosam, quidem assumenda quas recusandae incidunt
-                debitis, impedit labore ipsum velit totam esse earum natus eaque
-                quod enim, facilis est reprehenderit.
+                Me encuentro aquí para responder cualquier pregunta que puedas tener
+                sobre mi experiencia o servicio. Siempres puedes comunicarte conmigo completando el formulario que se encuentra debajo o en mis redes sociales, y te
+                responderé tan pronto como pueda.
               </p>
             </div>
             <div className="flex flex-col">
