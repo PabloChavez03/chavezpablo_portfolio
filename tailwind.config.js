@@ -13,7 +13,8 @@ module.exports = {
       },
       fontFamily: {
         mukta: ["Mukta", 'sans-serif'],
-        josefin: ["Josefin Sans", 'sans-serif']
+        josefin: ["Josefin Sans", 'sans-serif'],
+        sfpro: ["SF Pro Display", 'sans-serif']
       },
       animation: {
         text: "text 2.5s ease infinite",

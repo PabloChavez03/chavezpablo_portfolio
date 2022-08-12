@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Bienvenida from '../components/Bienvenida'
 import Layout from '../components/Layout'
 

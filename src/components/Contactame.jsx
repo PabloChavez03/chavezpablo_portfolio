@@ -90,7 +90,7 @@ export default function Contactame() {
               <h1 className="text-4xl py-2 pb-4 font-josefin">Contáctame</h1>
               <p className="font-mukta">
                 Me encuentro aquí para responder cualquier pregunta que puedas tener
-                sobre mi experiencia o servicio. Siempres puedes comunicarte conmigo completando el formulario que se encuentra debajo o en mis redes sociales, y te
+                sobre mi experiencia o servicio. Siempre puedes comunicarte conmigo completando el formulario que se encuentra debajo o en mis redes sociales, y te
                 responderé tan pronto como pueda.
               </p>
             </div>
