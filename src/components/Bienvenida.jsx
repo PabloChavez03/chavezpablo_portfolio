@@ -20,9 +20,9 @@ export default function Bienvenida() {
         </div>
         <div className="mt-4">
           <span className="text-gray-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod
-            atque, error veniam laudantium doloribus facilis impedit labore
-            vero, earum, sed reiciendis eveniet nobis.
+            Desarrollador web con experiencia de 9 meses y en crecimiento. Mis
+            destrezas residen en diseñar y crear sitios web que complazcan la
+            necesidad del cliente, y otras más.
           </span>
         </div>
         <div className="flex items-center mt-2 py-2">
@@ -61,7 +61,11 @@ export default function Bienvenida() {
               </a>
             </div>
             <div>
-              <a href="http://wa.me/5493442654108#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://wa.me/5493442654108#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <SiWhatsapp
                   className="text-gray-200 mx-4 transition-colors duration-75 hover:text-amber-400"
                   size={34}

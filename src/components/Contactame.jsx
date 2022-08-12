@@ -150,7 +150,7 @@ export default function Contactame() {
               <div className="flex flex-col">
                 <div className="flex justify-between">
                   <label className="pb-1 font-mukta after:content-['*'] after:ml-1 after:text-red-500">
-                    CORREO
+                    MENSAJE
                   </label>
                   <span
                     hidden={!err.message}
