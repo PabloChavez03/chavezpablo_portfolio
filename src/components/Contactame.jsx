@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import ButtonSubmit from "./utils/ButtonSubmit";
 import profileContact from "../../public/pablitoContact.png";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 let initialState = {
   user_name: "",
@@ -14,6 +15,7 @@ export default function Contactame() {
   const form = useRef();
   const [input, setInput] = useState(initialState);
   const [err, setErr] = useState(initialState);
+  
 
   const validateEmail = (email) => {
     const regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -55,21 +57,29 @@ export default function Contactame() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.YOUR_SERVICE_ID,
-        process.env.YOUR_TEMPLATE_ID,
-        form.current,
-        process.env.YOUR_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     process.env.YOUR_SERVICE_ID,
+    //     process.env.YOUR_TEMPLATE_ID,
+    //     form.current,
+    //     process.env.YOUR_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+    toast.success("Mensaje enviado", {
+      position: "bottom-right",
+      autoClose: 2500,
+      closeOnClick: true,
+      pauseOnHover: false,
+      theme: "colored",
+    });
+
     setInput({
       user_name: "",
       user_email: "",
@@ -89,9 +99,11 @@ export default function Contactame() {
             <div className="flex flex-col pb-4 mb-2">
               <h1 className="text-4xl py-2 pb-4 font-josefin">Contáctame</h1>
               <p className="font-mukta">
-                Me encuentro aquí para responder cualquier pregunta que puedas tener
-                sobre mi experiencia o servicio. Siempre puedes comunicarte conmigo completando el formulario que se encuentra debajo o en mis redes sociales, y te
-                responderé tan pronto como pueda.
+                Me encuentro aquí para responder cualquier pregunta que puedas
+                tener sobre mi experiencia o servicio. Siempre puedes
+                comunicarte conmigo completando el formulario que se encuentra
+                debajo o en mis redes sociales, y te responderé tan pronto como
+                pueda.
               </p>
             </div>
             <div className="flex flex-col">
@@ -182,7 +194,10 @@ export default function Contactame() {
         <div className="flex flex-col items-center">
           <div className="mt-10">
             <p className="text-slate-500 italic font-josefin text-base text-center">
-              `` Gracias por haberte pasado por aquí. Creé con mucho amor y cariño este portafolio, por el momento es pequeño pero con el tiempo irá creciendo, tendrá más features, experiencias y MUCHOS MÁS PROYECTOS ! ``
+              `` Gracias por haberte pasado por aquí. Creé con mucho amor y
+              cariño este portafolio, por el momento es pequeño pero con el
+              tiempo irá creciendo, tendrá más features, experiencias y MUCHOS
+              MÁS PROYECTOS ! ``
             </p>
           </div>
           <div className="max-w-sm">

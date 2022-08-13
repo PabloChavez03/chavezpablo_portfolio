@@ -1,6 +1,8 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { useRouter } from "next/router";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Layout({ children }) {
@@ -10,6 +12,7 @@ export default function Layout({ children }) {
     <div className="flex flex-col h-screen">
       <Navbar />
       {children}
+      <ToastContainer/>
       {!status ? null : <Footer/>}
     </div>
   );
