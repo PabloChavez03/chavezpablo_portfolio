@@ -182,9 +182,7 @@ export default function Contactame() {
         <div className="flex flex-col items-center">
           <div className="mt-10">
             <p className="text-slate-500 italic font-josefin text-base text-center">
-              `` Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              nam harum quibusdam. Numquam porro, quas natus officia aliquid
-              deleniti omnis, magni reprehenderit totam explicabo labore! ``
+              `` Gracias por haberte pasado por aquí. Creé con mucho amor y cariño este portafolio, por el momento es pequeño pero con el tiempo irá creciendo, tendrá más features, experiencias y MUCHOS MÁS PROYECTOS ! ``
             </p>
           </div>
           <div className="max-w-sm">

@@ -21,8 +21,7 @@ export default function Bienvenida() {
         <div className="mt-4">
           <span className="text-gray-200">
             Desarrollador web con experiencia de 9 meses y en crecimiento. Mis
-            destrezas residen en diseñar y crear sitios web que complazcan la
-            necesidad del cliente, y otras más.
+            destrezas residen en diseñar y crear sitios web que faciliten las necesidades de las personas, y otras más.
           </span>
         </div>
         <div className="flex items-center mt-2 py-2">
