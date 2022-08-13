@@ -5,7 +5,7 @@ import ButtonAbout from "./utils/ButtonAbout";
 
 export default function SobreMi() {
   return (
-    <div className="grid grid-cols-7 gap-4 place-content-center place-items-center h-screen bg-gray-200 overflow-x-hidden">
+    <div className="grid grid-cols-7 gap-4 place-content-center place-items-center h-screen w-screen bg-gray-200 overflow-x-hidden">
       <div className="col-start-1 col-end-4 m-4 p-10 max-w-sm">
         <div className="flex flex-col">
           <Image src={profileCoffe} alt={"profile coffe"} />
