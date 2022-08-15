@@ -33,9 +33,8 @@ export default function SobreMi() {
               la hora de aprender o hacer tareas. Hoy con 25 años, y con el mismo
               espíritu tengo el placer de enfocarme en lo que me apasiona:  
               <span className="font-bold"> desarrollar y crear soluciones para las personas</span>. Gracias a esto,
-              a lo largo de mi vida y mi experiencia como desarrollador, me he
-              dedicado a incrementar mis habilidades para la resolución de
-              problemas y trabajo en equipo, lo que me ha llevado a tener una
+              a lo largo de mi vida y experiencia como desarrollador, me dedico a incrementar mis habilidades para la resolución de
+              problemas y el trabajo en equipo, lo que me ha proporcionado tener una
               gran capacidad de aprendizaje de nuevas herramientas, tecnologías
               y buenas habilidades de comunicación.
             </p>
