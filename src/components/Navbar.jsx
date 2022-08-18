@@ -33,7 +33,7 @@ export default function Navbar() {
             </li>
           </Link>
         </ul>
-        <div className="invisible md:visible">
+        <div className="hidden md:block">
           <ButtonCV
             text={"Descargar CV"}
             path={

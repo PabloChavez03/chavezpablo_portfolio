@@ -9,7 +9,7 @@ export default function Layout({ children }) {
   let route = useRouter()
   let status = route.pathname !== '/' ? false : true;
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-wrap justify-center md:h-screen">
       <Navbar />
       {children}
       <ToastContainer/>
