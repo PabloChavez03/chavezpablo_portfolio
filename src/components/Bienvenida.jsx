@@ -7,7 +7,7 @@ import { AiOutlineMinus } from "react-icons/ai";
 
 export default function Bienvenida() {
   return (
-    <div className="grid grid-cols-7 gap-4 place-content-center place-items-center m-auto">
+    <div className="flex flex-col sm:grid sm:grid-cols-7 sm:gap-4 place-content-center place-items-center m-auto">
       <div className="col-start-1 col-end-5 m-5 p-10">
         <div className="mb-4">
           <div className="mb-4">
@@ -24,17 +24,17 @@ export default function Bienvenida() {
             destrezas residen en diseñar y crear sitios web que faciliten las necesidades de las personas, y otras más.
           </span>
         </div>
-        <div className="flex items-center mt-2 py-2">
+        <div className="flex flex-row-reverse lg:flex-row justify-end lg:justify-start items-center mt-2 py-2">
           <div className="py-2">
             <ButtonCV text={"Sobre mí"} path={"/about"} />
           </div>
-          <div className="ml-9">
+          <div className="invisible lg:visible lg:ml-9">
             <AiOutlineMinus
               className="text-gray-200 transition-colors duration-75 hover:text-amber-400"
               size={30}
             />
           </div>
-          <div className="flex flex-row ml-4">
+          <div className="flex flex-row lg:ml-4">
             <div>
               <a
                 href="https://github.com/PabloChavez03"

@@ -3,7 +3,7 @@ export default function ButtonCV({text,path,window,relation}) {
     <div>
     <a
       href={path}
-      className="relative inline-flex items-center justify-start px-3 py-1 md:px-6 md:py-3 overflow-hidden font-medium transition-all bg-gray-200 rounded hover:bg-white group"
+      className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-gray-200 rounded hover:bg-white group"
       target={window}
       rel={relation}
     >
