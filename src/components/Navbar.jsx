@@ -37,7 +37,7 @@ export default function Navbar() {
           <ButtonCV
             text={"Descargar CV"}
             path={
-              "https://drive.google.com/file/d/1idb6qGnblRpjzT90rEuOMhS2LL_Uk-zM/view?usp=sharing"
+              "https://docs.google.com/document/d/1y6J3r4rdSQavnyzB5RZ-sGEyTGqxbQ60DKriOLiiZsA/edit?usp=sharing"
             }
             window={"_blank"}
             relation={"noreferrer"}
