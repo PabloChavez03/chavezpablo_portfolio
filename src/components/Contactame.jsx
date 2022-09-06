@@ -57,21 +57,21 @@ export default function Contactame() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     process.env.YOUR_SERVICE_ID,
-    //     process.env.YOUR_TEMPLATE_ID,
-    //     form.current,
-    //     process.env.YOUR_PUBLIC_KEY
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        process.env.YOUR_SERVICE_ID,
+        process.env.YOUR_TEMPLATE_ID,
+        form.current,
+        process.env.YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     toast.success("Mensaje enviado", {
       position: "bottom-right",
       autoClose: 2500,
