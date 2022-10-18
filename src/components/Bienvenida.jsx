@@ -8,7 +8,7 @@ import { AiOutlineMinus } from "react-icons/ai";
 export default function Bienvenida() {
   return (
     <div className="flex flex-col sm:grid sm:grid-cols-7 sm:gap-4 place-content-center place-items-center m-auto">
-      <div className="col-start-1 col-end-5 m-5 p-10">
+      <div className="col-start-1 col-end-5 p-7">
         <div className="mb-4">
           <div className="mb-4">
             <h1 className="text-amber-400 font-mono">Divide y conquistarás</h1>

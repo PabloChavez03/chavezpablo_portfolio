@@ -1,6 +1,8 @@
 import Image from "next/image";
 import clothes22Pic from "../../public/clothes22.png";
 import piFoodPic from "../../public/pifood.png";
+import ascendPic from '../../public/ascendscreen2.jpeg'
+import astroPic from '../../public/astro.svg'
 import ButtonAbout from "../components/utils/ButtonAbout";
 import {
   SiRedux,
@@ -10,6 +12,7 @@ import {
   SiPostgresql,
   SiSequelize,
   SiPassport,
+  SiTailwindcss
 } from "react-icons/si";
 import { VscEmptyWindow } from "react-icons/vsc";
 
@@ -257,6 +260,75 @@ export default function Proyectos() {
                   className="px-1 selection:bg-green-400 selection:text-green-900"
                 >
                   Sequelize
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-row justify-between border-y-2 transition-colors hover:border-green-900 hover:border-opacity-50">
+        <div className="flex w-2/6 m-4 mr-10 py-10">
+          <Image
+            src={ascendPic}
+            alt={"pi food picture"}
+            className="rounded-lg transition-all delay-50 duration-500 hover:hue-rotate-180"
+          />
+        </div>
+        <div className="container flex flex-col justify-center">
+          <div className="flex justify-between items-center py-2 pb-3">
+            <div>
+              <h1 className="text-2xl underline underline-offset-4 font-josefin selection:bg-green-400 selection:text-green-900">
+                Ascend
+              </h1>
+            </div>
+            <div className="pr-4">
+              <ButtonAbout
+                text={"Ir a"}
+                path={"https://ascend-asesoriaintegral.netlify.app/"}
+                window={"_blank"}
+                relation={"noopener noreferrer"}
+              />
+            </div>
+          </div>
+          <p className="text-justify tracking-wide font-mukta pr-4 indent-4 selection:bg-green-400 selection:text-green-900">
+            Desarrollo de una pagina web utilizando Astro como framework. Astro es un marco web todo en uno para crear sitios web rápidos y centrados en el contenido. Mi objetivo con este sitio es que sea lo más veloz posible y que la descarga de su contenido ya sea en cualquier dispositivo sea la menor posible. Sin perder la estética de la página y manteniendo la interactividad con el usuario.
+          </p>
+          <div>
+            <h1 className="text-lg pt-3 font-josefin selection:bg-green-400 selection:text-green-900">
+              Tecnologias
+            </h1>
+            <div className="flex justify-center text-sm">
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <Image src={astroPic} alt={'Astro'} width={16} height={16} />
+                <a
+                  href="https://astro.build/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
+                  Astro
+                </a>
+              </div>
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <SiTailwindcss />
+                <a
+                  href={"https://tailwindcss.com/"}
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 cursor-pointer selection:bg-green-400 selection:text-green-900"
+                >
+                  Tailwind
+                </a>
+              </div>
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <SiNodedotjs />
+                <a
+                  href="https://nodejs.org/es/"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
+                  Node
                 </a>
               </div>
             </div>
