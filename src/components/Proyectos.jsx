@@ -1,8 +1,9 @@
 import Image from "next/image";
 import clothes22Pic from "../../public/clothes22.png";
 import piFoodPic from "../../public/pifood.png";
-import ascendPic from '../../public/ascendscreen2.jpeg'
-import astroPic from '../../public/astro.svg'
+import ascendPic from "../../public/ascendscreen2.jpeg";
+import astroPic from "../../public/astro.svg";
+import marksitePic from "../../public/marksite.png";
 import ButtonAbout from "../components/utils/ButtonAbout";
 import {
   SiRedux,
@@ -12,7 +13,9 @@ import {
   SiPostgresql,
   SiSequelize,
   SiPassport,
-  SiTailwindcss
+  SiTailwindcss,
+  SiTypescript,
+  SiVite
 } from "react-icons/si";
 import { VscEmptyWindow } from "react-icons/vsc";
 
@@ -270,7 +273,7 @@ export default function Proyectos() {
         <div className="flex w-2/6 m-4 mr-10 py-10">
           <Image
             src={ascendPic}
-            alt={"pi food picture"}
+            alt={"Ascend"}
             className="rounded-lg transition-all delay-50 duration-500 hover:hue-rotate-180"
           />
         </div>
@@ -291,7 +294,12 @@ export default function Proyectos() {
             </div>
           </div>
           <p className="text-justify tracking-wide font-mukta pr-4 indent-4 selection:bg-green-400 selection:text-green-900">
-            Desarrollo de una pagina web utilizando Astro como framework. Astro es un marco web todo en uno para crear sitios web rápidos y centrados en el contenido. Mi objetivo con este sitio es que sea lo más veloz posible y que la descarga de su contenido ya sea en cualquier dispositivo sea la menor posible. Sin perder la estética de la página y manteniendo la interactividad con el usuario.
+            Desarrollo de una pagina web utilizando Astro como framework. Astro
+            es un marco web todo en uno para crear sitios web rápidos y
+            centrados en el contenido. Mi objetivo con este sitio es que sea lo
+            más veloz posible y que la descarga de su contenido ya sea en
+            cualquier dispositivo sea la menor posible. Sin perder la estética
+            de la página y manteniendo la interactividad con el usuario.
           </p>
           <div>
             <h1 className="text-lg pt-3 font-josefin selection:bg-green-400 selection:text-green-900">
@@ -299,7 +307,7 @@ export default function Proyectos() {
             </h1>
             <div className="flex justify-center text-sm">
               <div className="flex items-center pr-2 transition-colors hover:text-green-900">
-                <Image src={astroPic} alt={'Astro'} width={16} height={16} />
+                <Image src={astroPic} alt={"Astro"} width={16} height={16} />
                 <a
                   href="https://astro.build/"
                   target={"_blank"}
@@ -335,6 +343,106 @@ export default function Proyectos() {
           </div>
         </div>
       </div>
+
+      <div className="flex flex-row justify-between border-y-2 transition-colors hover:border-green-900 hover:border-opacity-50">
+        <div className="flex w-2/6 m-4 mr-10 py-10">
+          <Image
+            src={marksitePic}
+            alt={"Marksite Pic"}
+            className="rounded-lg transition-all delay-50 duration-500 hover:hue-rotate-180"
+          />
+        </div>
+        <div className="container flex flex-col justify-center">
+          <div className="flex justify-between items-center py-2 pb-3">
+            <div>
+              <h1 className="text-2xl underline underline-offset-4 font-josefin selection:bg-green-400 selection:text-green-900">
+                Marksite Project
+              </h1>
+            </div>
+            <div className="pr-4">
+              <ButtonAbout
+                text={"Ir a"}
+                path={"https://marksite-project.netlify.app/"}
+                window={"_blank"}
+                relation={"noopener noreferrer"}
+              />
+            </div>
+          </div>
+          <p className="text-justify tracking-wide font-mukta pr-4 indent-4 selection:bg-green-400 selection:text-green-900">
+            Desarrollo de una aplicación que brinda la posibilidad de poder escribir en           <a
+              className="text-green-900 after:content-['_↗'] ..."
+              href="https://markdown.es/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Markdown
+            </a> <span className="text-slate-600 italic">- es un lenguaje de marcado ligero creado por John Gruber y Aaron Swartz que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida -</span>. 
+          </p>
+          <div>
+            <h1 className="text-lg pt-3 font-josefin selection:bg-green-400 selection:text-green-900">
+              Tecnologias
+            </h1>
+            <div className="flex justify-center text-sm">
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <SiReact />
+                <a
+                  href="https://es.reactjs.org/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
+                  React
+                </a>
+              </div>
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <SiTailwindcss />
+                <a
+                  href={"https://tailwindcss.com/"}
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 cursor-pointer selection:bg-green-400 selection:text-green-900"
+                >
+                  Tailwind
+                </a>
+              </div>
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <SiTypescript />
+                <a
+                  href="https://www.typescriptlang.org/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
+                  Typescript
+                </a>
+              </div>
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <SiVite />
+                <a
+                  href="https://vitejs.dev/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
+                  Vite
+                </a>
+              </div>
+              <div className="flex items-center pr-2 transition-colors hover:text-green-900">
+                <SiNodedotjs />
+                <a
+                  href="https://nodejs.org/es/"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                  className="px-1 selection:bg-green-400 selection:text-green-900"
+                >
+                  Node
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col items-center m-4 transition-colors hover:animate-pulse hover:text-green-900 delay-100">
         <div className="py-2">
           <VscEmptyWindow size={150} />
