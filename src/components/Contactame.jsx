@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
-import ButtonSubmit from "./utils/ButtonSubmit";
-import profileContact from "../../public/pablitoContact.png";
+import ButtonSubmit from "@components/utils/ButtonSubmit";
+import profileContact from "@assets/pablitoContact.png";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 

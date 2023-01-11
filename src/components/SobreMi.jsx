@@ -1,7 +1,6 @@
-import React from "react";
 import Image from "next/image";
-import profileCoffe from "../../public/pablitoCoofe.png";
-import ButtonAbout from "./utils/ButtonAbout";
+import profileCoffe from "@assets/pablitoCoofe.png";
+import ButtonAbout from "@components/utils/ButtonAbout";
 
 export default function SobreMi() {
   return (

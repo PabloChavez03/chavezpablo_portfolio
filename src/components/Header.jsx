@@ -1,7 +1,6 @@
-import React from 'react'
-import Logo from './Logo'
-import Navbar from './Navbar'
-import ButtonCV from './utils/ButtonCV'
+import Logo from '@components/Logo'
+import Navbar from '@components/Navbar'
+import ButtonCV from '@components/utils/ButtonCV'
 
 export default function Header() {
   return (

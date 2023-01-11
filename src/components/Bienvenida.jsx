@@ -1,6 +1,6 @@
 import Image from "next/image";
-import profilePic from "../../public/pablito.png";
-import ButtonCV from "./utils/ButtonCV";
+import profilePic from "@assets/pablito.png";
+import ButtonCV from "@components/utils/ButtonCV";
 
 import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { AiOutlineMinus } from "react-icons/ai";
