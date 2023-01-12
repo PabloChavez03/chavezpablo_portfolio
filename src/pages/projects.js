@@ -2,9 +2,10 @@ import Layout from "../components/Layout";
 import Proyectos from "@components/Proyectos";
 import Head from "next/head";
 import fs from 'node:fs/promises'
-import projectsFile from '@content/projects.json'
+import path from 'node:path'
+import process from 'node:process'
 
-export default function Projects() {
+export default function Projects({ projects }) {
   return (
     <div>
       <Head>
@@ -13,20 +14,18 @@ export default function Projects() {
         <link rel="icon" href="/logopc.png" />
       </Head>
       <Layout>
-        <Proyectos />
+        <Proyectos data={projects} />
       </Layout>
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const projects = await fs.readFile(projectsFile)
-
-  console.log(projects)
+  const projects = await fs.readFile(path.join(process.cwd(), 'src', 'content','projects.json')).then(JSON.parse)
 
   return {
     props: {
-      projects: []
+      projects
     }
   }
 }
