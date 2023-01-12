@@ -1,0 +1,38 @@
+[
+  {
+    "titleProject": "Clothes 22",
+    "content": "Desarrollo de un E-commerce que realicé en conjunto a un equipo de desarrolladores. La aplicación consta de las características innatas de un e-commerce (CRUD de productos, autenticación, catálogo, checkout, etc…). Integración de pasarela de pagos con Mercado Pago. Envío de emails transaccionales con NodeMailer. Sistema de descuentos a productos. Gestión y envío de boletines informativos. Administración de carrito de compras y órdenes de productos. Administración de usuarios y gestión de claves. Para la toma de decisiones del proyecto optamos por metodologías ágiles con sprints semanales (SCRUM).",
+    "urlProject": "https://clothes-22.vercel.app/",
+    "titleTecnologies": "Tecnologías",
+    "contentTecnologies": [
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "Redux",
+        "href": "http://es.redux.js.org"
+      },
+      {
+        "title": "Node",
+        "href": "http://nodejs.org/es/"
+      },
+      {
+        "title": "Express",
+        "href": "http://expressjs.com/"
+      },
+      {
+        "title": "PostgreSQL",
+        "href": "http://www.postgresql.org/"
+      },
+      {
+        "title": "Sequelize",
+        "href": "http://sequelize.org/"
+      },
+      {
+        "title": "Passport",
+        "href": "http://passportjs.org/"
+      }
+    ]
+  }
+]

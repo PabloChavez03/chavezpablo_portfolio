@@ -1,6 +1,8 @@
 import Layout from "../components/Layout";
-import Proyectos from "../components/Proyectos";
+import Proyectos from "@components/Proyectos";
 import Head from "next/head";
+import fs from 'node:fs/promises'
+import projectsFile from '@content/projects.json'
 
 export default function Projects() {
   return (
@@ -15,4 +17,16 @@ export default function Projects() {
       </Layout>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await fs.readFile(projectsFile)
+
+  console.log(projects)
+
+  return {
+    props: {
+      projects: []
+    }
+  }
 }
