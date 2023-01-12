@@ -4,6 +4,9 @@
     "content": "Desarrollo de un E-commerce que realicé en conjunto a un equipo de desarrolladores. La aplicación consta de las características innatas de un e-commerce (CRUD de productos, autenticación, catálogo, checkout, etc…). Integración de pasarela de pagos con Mercado Pago. Envío de emails transaccionales con NodeMailer. Sistema de descuentos a productos. Gestión y envío de boletines informativos. Administración de carrito de compras y órdenes de productos. Administración de usuarios y gestión de claves. Para la toma de decisiones del proyecto optamos por metodologías ágiles con sprints semanales (SCRUM).",
     "urlProject": "https://clothes-22.vercel.app/",
     "titleTecnologies": "Tecnologías",
+    "image": {
+      "alt": "clothes22"
+    }, 
     "contentTecnologies": [
       {
         "title": "React",
@@ -32,6 +35,64 @@
       {
         "title": "Passport",
         "href": "http://passportjs.org/"
+      }
+    ]
+  },
+  {
+    "titleProject": "PI Food",
+    "content": "Desarrollo de una SPA (Single Page Application) utilizando React para el Front End y Redux como state management. Todos los componentes fueron desarrollados con CSS sin uso de librerias externas. La SPA consume datos de una base de datos PostgreSQL a través de un Back End desarrollado en NodeJS utilizando Express. Algunos características del proyecto: Cache de búsquedas, ordenamientos y filtros, formulario controlado para creación de recetas.",
+    "urlProject": "https://pi-food-main-opal.vercel.app",
+    "titleTecnologies": "Tecnologías",
+    "image": {
+      "alt": "pi-food"
+    }, 
+    "contentTecnologies": [
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "Redux",
+        "href": "http://es.redux.js.org"
+      },
+      {
+        "title": "Node",
+        "href": "http://nodejs.org/es/"
+      },
+      {
+        "title": "Express",
+        "href": "http://expressjs.com/"
+      },
+      {
+        "title": "PostgreSQL",
+        "href": "http://www.postgresql.org/"
+      },
+      {
+        "title": "Sequelize",
+        "href": "http://sequelize.org/"
+      }
+    ]
+  },
+  {
+    "titleProject": "Ascend",
+    "content": "Desarrollo de una pagina web utilizando Astro como framework. Astro es un marco web todo en uno para crear sitios web rápidos y centrados en el contenido. Mi objetivo con este sitio es que sea lo más veloz posible y que la descarga de su contenido ya sea en cualquier dispositivo sea la menor posible. Sin perder la estética de la página y manteniendo la interactividad con el usuario.",
+    "urlProject": "https://ascend-asesoriaintegral.netlify.app/",
+    "titleTecnologies": "Tecnologías",
+    "image": {
+      "alt": "ascend-asesoria-integral"
+    }, 
+    "contentTecnologies": [
+      {
+        "title": "Astro",
+        "href": "https://astro.build/"
+      },
+      {
+        "title": "Tailwind",
+        "href": "https://tailwindcss.com/"
+      },
+      {
+        "title": "Node",
+        "href": "http://nodejs.org/es/"
       }
     ]
   }
