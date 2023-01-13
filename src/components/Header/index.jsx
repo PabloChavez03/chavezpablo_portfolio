@@ -1,11 +1,10 @@
-import React from 'react'
-import Logo from './Logo'
-import Navbar from './Navbar'
-import ButtonCV from './utils/ButtonCV'
+import Logo from '@components/Logo'
+import Navbar from '@components/Header/components/Navbar'
+import ButtonCV from '@components/utils/ButtonCV'
 
 export default function Header() {
   return (
-    <header className='flex items-center justify-around bg-deepGreen-900 p-5 w-full shadow-sm'>
+    <header className='flex items-center justify-between bg-deepGreen-900 py-5 px-7 w-full shadow-sm'>
       <Logo />
       <Navbar />
       <div className="hidden md:block">

@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import SobreMi from "../components/SobreMi";
+import SobreMi from "../components/SobreMi/SobreMi";
 import Head from "next/head";
 
 export default function About() {

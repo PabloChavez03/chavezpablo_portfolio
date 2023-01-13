@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
-import ButtonSubmit from "./utils/ButtonSubmit";
-import profileContact from "../../public/pablitoContact.png";
-import emailjs from "@emailjs/browser";
+import ButtonSubmit from "@components/utils/ButtonSubmit";
+import profileContact from "@assets/pablitoContact.png";
+// import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
 let initialState = {
@@ -57,21 +57,21 @@ export default function Contactame() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.YOUR_SERVICE_ID,
-        process.env.YOUR_TEMPLATE_ID,
-        form.current,
-        process.env.YOUR_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     process.env.YOUR_SERVICE_ID,
+    //     process.env.YOUR_TEMPLATE_ID,
+    //     form.current,
+    //     process.env.YOUR_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
     toast.success("Mensaje enviado", {
       position: "bottom-right",
       autoClose: 2500,

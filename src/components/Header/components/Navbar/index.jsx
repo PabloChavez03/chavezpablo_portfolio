@@ -1,8 +1,5 @@
-import Link from "next/link";
-import ButtonCV from "./utils/ButtonCV";
-import { AiOutlineMenu } from "react-icons/ai";
-import ResponsiveMenu from "./ResponsiveMenu";
-import CommonMenu from "./CommonMenu";
+import ResponsiveMenu from "@components/Header/components/Navbar/components/ResponsiveMenu";
+import CommonMenu from "@components/Header/components/Navbar/components/CommonMenu";
 
 export default function Navbar() {
   return (
