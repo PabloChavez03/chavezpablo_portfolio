@@ -17,7 +17,7 @@ const ResponsiveMenu = () => {
       </button>
       <div
         hidden={oculto}
-        className="absolute top-[8vh] -right-0 z-[1] py-20 px-[38vw] xs:px-[40vw] bg-deepGreen-900 md:flex md:visible md:flex-row font-mukta text-lg"
+        className="absolute top-[8vh] -right-0 z-[1] min-w-full py-16 xs:px-[40vw] bg-deepGreen-900 md:flex md:visible md:flex-row font-mukta text-lg"
       >
         <ul className="text-center">
           <Link href={"/"}>
