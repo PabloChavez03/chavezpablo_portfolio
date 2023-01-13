@@ -20,7 +20,7 @@ function SobreMiResponsive() {
       </div>
       <div className="p-8 rounded-lg">
         <div className="flex flex-col items-center">
-          <p className="text-justify tracking-wide text-lg text-green-800 font-mukta">
+          <p className="text-center tracking-wide text-lg text-green-800 font-mukta">
             Nací y crecí en la ciudad de{" "}
             <a
               href="https://www.google.com/maps/place/Gualeguaych%C3%BA,+Entre+R%C3%ADos/data=!4m2!3m1!1s0x95baa828f3333543:0xa95f93d6a79497c1?sa=X&ved=2ahUKEwjk7MabysT5AhXGl5UCHU98DZ8Q8gF6BAh-EAE"
