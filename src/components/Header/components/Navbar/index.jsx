@@ -1,5 +1,5 @@
-import ResponsiveMenu from "@components/ResponsiveMenu";
-import CommonMenu from "@components/CommonMenu";
+import ResponsiveMenu from "@components/Header/components/Navbar/components/ResponsiveMenu";
+import CommonMenu from "@components/Header/components/Navbar/components/CommonMenu";
 
 export default function Navbar() {
   return (
