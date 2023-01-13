@@ -95,5 +95,36 @@
         "href": "http://nodejs.org/es/"
       }
     ]
+  },
+  {
+    "titleProject": "Marksite Project",
+    "content": "Desarrollo de una aplicación que brinda la posibilidad de poder escribir en Markdown. Markdown es un lenguaje de marcado ligero creado por John Gruber y Aaron Swartz que trata de conseguir la máxima legibilidad y facilidad de publicación tanto en su forma de entrada como de salida.",
+    "urlProject": "https://marksite-project.netlify.app/",
+    "titleTecnologies": "Tecnologías",
+    "image": {
+      "alt": "marksite"
+    }, 
+    "contentTecnologies": [
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "Tailwind",
+        "href": "https://tailwindcss.com/"
+      },
+      {
+        "title": "Typescript",
+        "href": "https://www.typescriptlang.org/"
+      },
+      {
+        "title": "Vite",
+        "href": "https://vitejs.dev/"
+      },
+      {
+        "title": "Node",
+        "href": "http://nodejs.org/es/"
+      }
+    ]
   }
 ]
