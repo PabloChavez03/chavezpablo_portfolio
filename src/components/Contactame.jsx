@@ -88,7 +88,7 @@ export default function Contactame() {
   };
 
   return (
-    <div className="grid grid-cols-7 gap-4 place-content-center place-items-center h-screen bg-gray-200 overflow-x-hidden">
+    <div className="grid grid-cols-7 gap-4 place-content-center place-items-center h-screen w-full bg-gray-200 overflow-y-hidden">
       <div className="col-start-1 col-end-5">
         <div className="m-2 pt-12 p-10">
           <form

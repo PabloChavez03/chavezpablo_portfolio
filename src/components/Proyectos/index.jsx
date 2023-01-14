@@ -3,7 +3,7 @@ import Proyecto from "./components/Proyecto";
 
 export default function Proyectos({ data }) {
   return (
-    <div className="flex flex-col bg-gray-200 w-screen overflow-x-hidden">
+    <div className="flex flex-col bg-gray-200 w-full overflow-y-hidden">
       <h1 className="m-4 py-1 pt-6 text-5xl font-josefin underline underline-offset-8 selection:bg-green-400 selection:text-green-900 transition-colors hover:text-green-900">
         Proyectos
       </h1>

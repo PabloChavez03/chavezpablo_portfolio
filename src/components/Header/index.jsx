@@ -4,7 +4,7 @@ import ButtonCV from '@components/utils/ButtonCV'
 
 export default function Header() {
   return (
-    <header className='flex items-center justify-between bg-deepGreen-900 py-5 px-7 w-full shadow-sm'>
+    <header className='flex items-center justify-between bg-deepGreen-900 py-5 px-7 max-h-[4.5rem] w-full shadow-sm'>
       <Logo />
       <Navbar />
       <div className="hidden md:block">

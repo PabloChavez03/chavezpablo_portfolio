@@ -4,7 +4,7 @@ import ButtonAbout from "@components/utils/ButtonAbout";
 
 function SobreMiCommon() {
   return (
-    <div className="hidden md:grid md:grid-cols-7 md:gap-4 md:place-content-center md:place-items-center h-screen w-screen bg-gray-200 overflow-x-hidden">
+    <div className="hidden md:grid md:grid-cols-7 md:gap-4 md:place-content-center md:place-items-center h-screen w-full bg-gray-200 overflow-x-hidden">
       <div className="col-start-1 col-end-4 m-4 p-10 max-w-sm">
         <div className="flex flex-col">
           <Image src={profileCoffe} alt={"profile coffe"} />
@@ -15,7 +15,7 @@ function SobreMiCommon() {
           </div>
         </div>
       </div>
-      <div className="col-start-4 col-end-8 m-5 mr-14 p-10 rounded-lg">
+      <div className="md:col-start-4 md:col-end-8 m-5 mr-14 p-10 rounded-lg">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between items-center">
             <h1 className="underline underline-offset-8 mb-8 text-4xl font-josefin selection:bg-green-400 selection:text-green-900 transition-colors hover:text-green-900">
