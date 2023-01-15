@@ -34,11 +34,11 @@ function ProyectoResponsive({
         <p className="text-center tracking-wide font-mukta p-4 indent-4 selection:bg-green-400 selection:text-green-900">
           {content}
         </p>
-        <div className="flex flex-col items-center px-2">
+        <div className="flex flex-col items-center">
           <h1 className="text-xl text-center pt-3 font-josefin selection:bg-green-400 selection:text-green-900">
             {titleTech}
           </h1>
-          <div className="flex flex-wrap justify-center text-sm py-2">
+          <div className="flex flex-wrap justify-center text-sm py-2 px-4">
             {contentTech.length
               ? contentTech.map((content) => {
                   const iconByTech = ICONS_BY_TECH.find(
