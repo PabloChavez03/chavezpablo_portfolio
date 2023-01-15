@@ -40,6 +40,11 @@ const ResponsiveMenu = () => {
               <a className="hover:underline hover:underline-offset-[1em] hover:underline-amber-400 hover:text-amber-400 transition-colors duration-300">Contáctame</a>
             </li>
           </Link>
+          <Link href={"/extra"}>
+            <li className="py-2 text-gray-200 cursor-pointer">
+              <a className="hover:underline hover:underline-offset-[1em] hover:underline-amber-400 hover:text-amber-400 transition-colors duration-300">Extra</a>
+            </li>
+          </Link>
         </ul>
       </div>
     </div>
