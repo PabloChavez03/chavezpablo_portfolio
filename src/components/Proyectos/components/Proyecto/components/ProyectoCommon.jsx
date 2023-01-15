@@ -2,6 +2,7 @@ import Image from "next/image";
 import ButtonAbout from "@components/utils/ButtonAbout";
 import { ICONS_BY_TECH } from "@constants/icons-by-tech";
 import { IMAGE_BY_PROJECT } from "@constants/image-by-project";
+import ButtonGithub from "@components/utils/ButtonGithub";
 
 function ProyectoCommon({
   title,
@@ -10,6 +11,7 @@ function ProyectoCommon({
   titleTech,
   contentTech,
   image,
+  urlGithub,
 }) {
   const imagenByProject = IMAGE_BY_PROJECT.find(
     (project) => project.name === image.alt
@@ -30,13 +32,20 @@ function ProyectoCommon({
               {title}
             </h1>
           </div>
-          <div className="pr-4 ">
-            <ButtonAbout
-              text={"Ir a"}
-              path={urlProject}
+          <div className="flex flex-row-reverse pr-4 ">
+            <ButtonGithub
+              path={urlGithub}
               window={"_blank"}
               relation={"noopener noreferrer"}
             />
+            <div className="pr-4">
+              <ButtonAbout
+                text={"Ir a"}
+                path={urlProject}
+                window={"_blank"}
+                relation={"noopener noreferrer"}
+              />
+            </div>
           </div>
         </div>
         <p className="text-justify tracking-wide font-mukta pr-4 indent-4 selection:bg-green-400 selection:text-green-900">
