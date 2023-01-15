@@ -11,15 +11,15 @@ export default function Bienvenida() {
       <div className="flex  flex-col md:block items-center justify-between md:col-start-1 md:col-end-5 p-7">
         <div className="mb-2">
           <div className="mb-6">
-            <h1 className="pb-2 text-center md:text-left text-amber-400 font-mono">Divide y conquistarás</h1>
+            <h1 className="pb-2 text-left text-amber-400 font-mono">Divide y conquistarás</h1>
           </div>
-          <h1 className="font-serif text-center md:text-left text-6xl text-gray-200">
+          <h1 className="font-serif text-left text-6xl text-gray-200">
             Full Stack Developer
           </h1>
-          <h1 className="font-serif text-center md:text-left text-6xl text-gray-200">Pablo Chávez</h1>
+          <h1 className="font-serif text-left text-6xl text-gray-200">Pablo Chávez</h1>
         </div>
         <div className="mt-4">
-          <p className="text-center md:text-left text-gray-200">
+          <p className="text-left text-gray-200">
             Desarrollador web con un año de experiencia y en crecimiento. Mis
             destrezas residen en diseñar y crear sitios web que faciliten las necesidades de las personas, y otras más.
           </p>

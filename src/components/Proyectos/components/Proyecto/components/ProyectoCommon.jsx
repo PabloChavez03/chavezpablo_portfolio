@@ -3,7 +3,7 @@ import ButtonAbout from "@components/utils/ButtonAbout";
 import { ICONS_BY_TECH } from "@constants/icons-by-tech";
 import { IMAGE_BY_PROJECT } from "@constants/image-by-project";
 
-function Proyecto({
+function ProyectoCommon({
   title,
   content,
   urlProject,
@@ -15,7 +15,7 @@ function Proyecto({
     (project) => project.name === image.alt
   );
   return (
-    <div className="flex justify-between border-y-2 ">
+    <div className="hidden md:flex">
       <div className="flex w-2/6 m-4 mr-10 py-14">
         <Image
           src={imagenByProject.src}
@@ -77,4 +77,4 @@ function Proyecto({
   );
 }
 
-export default Proyecto;
+export default ProyectoCommon;
