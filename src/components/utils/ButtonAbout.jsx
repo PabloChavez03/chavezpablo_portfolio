@@ -13,7 +13,7 @@ export default function ButtonAbout({path,text,window,relation}) {
         rel={relation}
       >
         {text}
-        <div className="pl-2"><BsArrowRight/></div>
+        <div className="hidden md:block pl-2"><BsArrowRight/></div>
       </a>
     </div>
   );
