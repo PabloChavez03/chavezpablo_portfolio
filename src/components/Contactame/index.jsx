@@ -86,7 +86,7 @@ export default function Contactame() {
   };
 
   return (
-    <div className="flex flex-col md:grid md:grid-cols-7 md:gap-4 md:place-content-center md:place-items-center md:w-full bg-gray-200">
+    <div className="flex flex-col md:grid md:grid-cols-7 md:gap-4 md:place-content-center md:place-items-center md:w-full min-h-screen bg-gray-200">
       <div className="flex flex-col md:col-start-1 md:col-end-5">
         <div className="flex md:block md:pt-12 p-5 md:p-10">
           <form
@@ -108,7 +108,7 @@ export default function Contactame() {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-wrap md:flex-row justify-between my-2 py-2">
-                <div className="flex flex-col">
+                <div className="flex flex-col w-full md:w-auto">
                   <div className="flex justify-between">
                     <label
                       htmlFor="name"
@@ -128,12 +128,12 @@ export default function Contactame() {
                     name="user_name"
                     value={input.user_name}
                     id="name"
-                    className="h-9 w-80 px-3 font-mukta bg-green-900 bg-opacity-20 transition-colors focus:shadow-lg focus:bg-green-900 focus:bg-opacity-10 focus:text-green-900 focus:ring-2 focus:ring-green-900 focus:outline-none"
+                    className="h-9 md:w-80 px-3 font-mukta bg-green-900 bg-opacity-20 transition-colors focus:shadow-lg focus:bg-green-900 focus:bg-opacity-10 focus:text-green-900 focus:ring-2 focus:ring-green-900 focus:outline-none"
                     autoComplete="off"
                     onChange={handleChange}
                   />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col w-full md:w-auto">
                   <div className="flex justify-between">
                     <label
                       htmlFor="email"
@@ -153,13 +153,13 @@ export default function Contactame() {
                     name="user_email"
                     value={input.user_email}
                     id="email"
-                    className="h-9 w-80 px-3 font-mukta bg-green-900 bg-opacity-20 transition-colors focus:shadow-lg focus:bg-green-900 focus:bg-opacity-10 focus:text-green-900 focus:ring-2 focus:ring-green-900 focus:outline-none"
+                    className="h-9 md:w-80 px-3 font-mukta bg-green-900 bg-opacity-20 transition-colors focus:shadow-lg focus:bg-green-900 focus:bg-opacity-10 focus:text-green-900 focus:ring-2 focus:ring-green-900 focus:outline-none"
                     autoComplete="off"
                     onChange={handleChange}
                   />
                 </div>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col w-full md:w-auto">
                 <div className="flex justify-between">
                   <label className="-mt-1 md:mt-0 pb-1 font-mukta after:content-['*'] after:ml-1 after:text-red-500">
                     MENSAJE
