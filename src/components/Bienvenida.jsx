@@ -40,6 +40,7 @@ export default function Bienvenida() {
                 href="https://github.com/PabloChavez03"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Click to see my projects on Github"
               >
                 <SiGithub
                   className="text-gray-200 mx-3 md:mx-4 transition-colors duration-75 hover:text-amber-400"
@@ -52,6 +53,8 @@ export default function Bienvenida() {
                 href="https://www.linkedin.com/in/pablo-oscar-chavez/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="
+                Click to see more about me on LinkedIn"
               >
                 <SiLinkedin
                   className="text-gray-200 mx-3 md:mx-4 transition-colors duration-75 hover:text-amber-400"
@@ -64,6 +67,7 @@ export default function Bienvenida() {
                 href="http://wa.me/5493442654108#"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Click to contact me by Whatsapp"
               >
                 <SiWhatsapp
                   className="text-gray-200 mx-3 md:mx-4 transition-colors duration-75 hover:text-amber-400"
@@ -75,7 +79,7 @@ export default function Bienvenida() {
         </div>
       </div>
       <div className="hidden md:block md:col-start-5 md:col-end-8 m-5 p-5 max-w-md">
-        <Image src={profilePic} alt={"profile picture"} />
+        <Image src={profilePic} alt={"profile picture"}/>
       </div>
     </div>
   );

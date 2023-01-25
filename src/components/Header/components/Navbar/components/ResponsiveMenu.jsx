@@ -8,7 +8,7 @@ const ResponsiveMenu = () => {
   console.log(size);
   return (
     <div className="md:hidden flex justify-center">
-      <button className="peer">
+      <button aria-label="menu">
         <AiOutlineMenu
           className="text-gray-200 transition-colors duration-75 hover:text-amber-400"
           size={34}
