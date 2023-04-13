@@ -1,4 +1,4 @@
-export default function ButtonCV({text,path,window,relation}) {
+export default function ButtonCV ({ text, path, window, relation }) {
   return (
     <div>
     <a

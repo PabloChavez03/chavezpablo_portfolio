@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 import {
   SiReact,
   SiRedux,
@@ -10,52 +10,52 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVite
-} from "react-icons/si";
-import astroPic from "@assets/astro.svg";
+} from 'react-icons/si'
+import astroPic from '@assets/astro.svg'
 
 export const ICONS_BY_TECH = [
   {
-    name: "React",
-    icon: <SiReact />,
+    name: 'React',
+    icon: <SiReact />
   },
   {
-    name: "Redux",
-    icon: <SiRedux />,
+    name: 'Redux',
+    icon: <SiRedux />
   },
   {
-    name: "Node",
-    icon: <SiNodedotjs />,
+    name: 'Node',
+    icon: <SiNodedotjs />
   },
   {
-    name: "Express",
-    icon: <SiExpress />,
+    name: 'Express',
+    icon: <SiExpress />
   },
   {
-    name: "PostgreSQL",
-    icon: <SiPostgresql />,
+    name: 'PostgreSQL',
+    icon: <SiPostgresql />
   },
   {
-    name: "Sequelize",
-    icon: <SiSequelize />,
+    name: 'Sequelize',
+    icon: <SiSequelize />
   },
   {
-    name: "Passport",
-    icon: <SiPassport />,
+    name: 'Passport',
+    icon: <SiPassport />
   },
   {
-    name: "Tailwind",
-    icon: <SiTailwindcss />,
+    name: 'Tailwind',
+    icon: <SiTailwindcss />
   },
   {
-    name: "Astro",
+    name: 'Astro',
     icon: <Image src={astroPic} alt="astro" width={16} height={16} />
   },
   {
-    name: "Typescript",
-    icon: <SiTypescript />,
+    name: 'Typescript',
+    icon: <SiTypescript />
   },
   {
-    name: "Vite",
-    icon: <SiVite />,
+    name: 'Vite',
+    icon: <SiVite />
   }
-];
+]

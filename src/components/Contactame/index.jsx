@@ -1,61 +1,61 @@
-import { useRef, useState } from "react";
-import ButtonSubmit from "@components/utils/ButtonSubmit";
-import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
-import ExtraComponent from "@components/ExtraComponent";
+import { useRef, useState } from 'react'
+import ButtonSubmit from '@components/utils/ButtonSubmit'
+import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify'
+import ExtraComponent from '@components/ExtraComponent'
 
-let initialState = {
-  user_name: "",
-  user_email: "",
-  message: "",
-};
+const initialState = {
+  user_name: '',
+  user_email: '',
+  message: ''
+}
 
-export default function Contactame() {
-  const form = useRef();
-  const [input, setInput] = useState(initialState);
-  const [err, setErr] = useState(initialState);
+export default function Contactame () {
+  const form = useRef()
+  const [input, setInput] = useState(initialState)
+  const [err, setErr] = useState(initialState)
 
   const validateEmail = (email) => {
-    const regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    return regex.test(email);
-  };
+    const regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+    return regex.test(email)
+  }
 
   const validate = (input) => {
-    let err = {};
+    const err = {}
 
     if (!input.user_name) {
-      err.user_name = "Debe ingresar un nombre";
+      err.user_name = 'Debe ingresar un nombre'
     }
     if (!input.message) {
-      err.message = "Debe ingresar un mensaje";
+      err.message = 'Debe ingresar un mensaje'
     }
     if (!input.user_email) {
-      err.user_email = "Debe ingresar un correo";
+      err.user_email = 'Debe ingresar un correo'
     } else if (!validateEmail(input.user_email)) {
-      err.user_email = "Debe ingresar un correo valido";
+      err.user_email = 'Debe ingresar un correo valido'
     }
-    return err;
-  };
+    return err
+  }
 
   const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
+    const name = e.target.name
+    const value = e.target.value
     setInput((prev) => ({
       ...prev,
-      [name]: value,
-    }));
+      [name]: value
+    }))
 
     setErr(
       validate({
         ...input,
-        [name]: value,
+        [name]: value
       })
-    );
-  };
+    )
+  }
 
   const handleSubmit = (e) => {
     console.log(process.env.YOUR_SERVICE_ID)
-    e.preventDefault();
+    e.preventDefault()
     emailjs
       .sendForm(
         process.env.YOUR_SERVICE_ID,
@@ -65,26 +65,26 @@ export default function Contactame() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result.text)
         },
         (error) => {
-          console.log(error.text);
+          console.log(error.text)
         }
-      );
-    toast.success("Mensaje enviado", {
-      position: "bottom-right",
+      )
+    toast.success('Mensaje enviado', {
+      position: 'bottom-right',
       autoClose: 2500,
       closeOnClick: true,
       pauseOnHover: false,
-      theme: "colored",
-    });
+      theme: 'colored'
+    })
 
     setInput({
-      user_name: "",
-      user_email: "",
-      message: "",
-    });
-  };
+      user_name: '',
+      user_email: '',
+      message: ''
+    })
+  }
 
   return (
     <div className="flex flex-col md:grid md:grid-cols-7 md:gap-4 md:place-content-center md:place-items-center md:w-full min-h-screen bg-gray-200">
@@ -97,7 +97,7 @@ export default function Contactame() {
           >
             <div className="flex flex-col md:pb-4 md:mb-2">
               <h1 className="underline underline-offset-8 text-4xl py-2 pb-4 font-josefin">
-                Contáctame  
+                Contáctame
               </h1>
               <p className="pt-2 md:pt-0 md:py-0 font-mukta">
                 Me encuentro aquí para responder cualquier pregunta que puedas
@@ -184,7 +184,7 @@ export default function Contactame() {
               </div>
               <div className="flex justify-center md:justify-end pt-2 mt-2">
                 <ButtonSubmit
-                  status={Object.values(err).length === 0 ? false : true}
+                  status={Object.values(err).length !== 0}
                 />
               </div>
             </div>
@@ -195,5 +195,5 @@ export default function Contactame() {
         <ExtraComponent />
       </div>
     </div>
-  );
+  )
 }

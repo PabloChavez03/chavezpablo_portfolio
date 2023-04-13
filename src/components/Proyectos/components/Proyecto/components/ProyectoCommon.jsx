@@ -1,21 +1,21 @@
-import Image from "next/image";
-import ButtonAbout from "@components/utils/ButtonAbout";
-import { ICONS_BY_TECH } from "@constants/icons-by-tech";
-import { IMAGE_BY_PROJECT } from "@constants/image-by-project";
-import ButtonGithub from "@components/utils/ButtonGithub";
+import Image from 'next/image'
+import ButtonAbout from '@components/utils/ButtonAbout'
+import { ICONS_BY_TECH } from '@constants/icons-by-tech'
+import { IMAGE_BY_PROJECT } from '@constants/image-by-project'
+import ButtonGithub from '@components/utils/ButtonGithub'
 
-function ProyectoCommon({
+function ProyectoCommon ({
   title,
   content,
   urlProject,
   titleTech,
   contentTech,
   image,
-  urlGithub,
+  urlGithub
 }) {
   const imagenByProject = IMAGE_BY_PROJECT.find(
     (project) => project.name === image.alt
-  );
+  )
   return (
     <div className="hidden md:flex">
       <div className="flex w-2/6 m-4 mr-10 py-14">
@@ -35,15 +35,15 @@ function ProyectoCommon({
           <div className="flex flex-row-reverse pr-4 ">
             <ButtonGithub
               path={urlGithub}
-              window={"_blank"}
-              relation={"noopener noreferrer"}
+              window={'_blank'}
+              relation={'noopener noreferrer'}
             />
             <div className="pr-4">
               <ButtonAbout
-                text={"Ir a"}
+                text={'Ir a'}
                 path={urlProject}
-                window={"_blank"}
-                relation={"noopener noreferrer"}
+                window={'_blank'}
+                relation={'noopener noreferrer'}
               />
             </div>
           </div>
@@ -58,10 +58,10 @@ function ProyectoCommon({
           <div className="flex justify-center text-sm ">
             {contentTech.length
               ? contentTech.map((content) => {
-                  const iconByTech = ICONS_BY_TECH.find(
-                    (title) => title.name === content.title
-                  );
-                  return (
+                const iconByTech = ICONS_BY_TECH.find(
+                  (title) => title.name === content.title
+                )
+                return (
                     <div
                       key={content.title}
                       className="flex items-center pr-2 transition-colors hover:text-green-900"
@@ -69,21 +69,21 @@ function ProyectoCommon({
                       {iconByTech?.icon}
                       <a
                         href={content.href}
-                        target={"_blank"}
+                        target={'_blank'}
                         rel="noreferrer"
                         className="px-1 selection:bg-green-400 selection:text-green-900"
                       >
                         {content.title}
                       </a>
                     </div>
-                  );
-                })
+                )
+              })
               : null}
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default ProyectoCommon;
+export default ProyectoCommon

@@ -1,6 +1,6 @@
-import { SiGithub } from "react-icons/si";
+import { SiGithub } from 'react-icons/si'
 
-export default function ButtonGithub({path,window,relation}) {
+export default function ButtonGithub ({ path, window, relation }) {
   return (
     <div>
       <a
@@ -15,5 +15,5 @@ export default function ButtonGithub({path,window,relation}) {
         <div><SiGithub size={27}/></div>
       </a>
     </div>
-  );
+  )
 }

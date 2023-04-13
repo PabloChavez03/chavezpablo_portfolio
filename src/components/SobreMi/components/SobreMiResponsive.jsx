@@ -1,8 +1,8 @@
-import Image from "next/image";
-import profileCoffe from "@assets/pablitoCoofe.png";
-import ButtonAbout from "@components/utils/ButtonAbout";
+import Image from 'next/image'
+import profileCoffe from '@assets/pablitoCoofe.png'
+import ButtonAbout from '@components/utils/ButtonAbout'
 
-function SobreMiResponsive() {
+function SobreMiResponsive () {
   return (
     <div className="md:hidden flex flex-col items-center h-screen w-screen bg-gray-200 overflow-x-hidden">
       <div className="flex flex-col items-center p-8 max-w-sm">
@@ -10,7 +10,7 @@ function SobreMiResponsive() {
           Sobre mí
         </h1>
         <div className="flex flex-col">
-          <Image src={profileCoffe} alt={"profile coffe"} />
+          <Image src={profileCoffe} alt={'profile coffe'} />
           <div>
             <h1 className="text-slate-500 italic font-josefin text-base text-center">
               `` La disciplina es el puente entre las metas y los logros. ``
@@ -21,7 +21,7 @@ function SobreMiResponsive() {
       <div className="p-8 rounded-lg">
         <div className="flex flex-col items-center">
           <p className="text-center tracking-wide text-lg text-green-800 font-mukta">
-            Nací y crecí en la ciudad de{" "}
+            Nací y crecí en la ciudad de{' '}
             <a
               href="https://www.google.com/maps/place/Gualeguaych%C3%BA,+Entre+R%C3%ADos/data=!4m2!3m1!1s0x95baa828f3333543:0xa95f93d6a79497c1?sa=X&ved=2ahUKEwjk7MabysT5AhXGl5UCHU98DZ8Q8gF6BAh-EAE"
               target="_blank"
@@ -35,7 +35,7 @@ function SobreMiResponsive() {
             con el mismo espíritu tengo el placer de enfocarme en lo que me
             apasiona:
             <span className="font-bold">
-              {" "}
+              {' '}
               desarrollar y crear soluciones para las personas
             </span>
             . Gracias a esto, a lo largo de mi vida y experiencia como
@@ -45,12 +45,12 @@ function SobreMiResponsive() {
             herramientas, tecnologías y buenas habilidades de comunicación.
           </p>
           <div className="flex flex-row justify-between items-center pb-4 pt-10">
-            <ButtonAbout path={"/projects"} text={"Mis proyectos"} />
+            <ButtonAbout path={'/projects'} text={'Mis proyectos'} />
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default SobreMiResponsive;
+export default SobreMiResponsive

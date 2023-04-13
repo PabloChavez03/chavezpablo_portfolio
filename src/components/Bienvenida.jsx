@@ -1,11 +1,11 @@
-import Image from "next/image";
-import profilePic from "@assets/pablito.png";
-import ButtonCV from "@components/utils/ButtonCV";
+import Image from 'next/image'
+import profilePic from '@assets/pablito.png'
+import ButtonCV from '@components/utils/ButtonCV'
 
-import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
-import { AiOutlineMinus } from "react-icons/ai";
+import { SiGithub, SiLinkedin, SiWhatsapp } from 'react-icons/si'
+import { AiOutlineMinus } from 'react-icons/ai'
 
-export default function Bienvenida() {
+export default function Bienvenida () {
   return (
     <div className="flex flex-col md:grid md:grid-cols-7 md:gap-4 md:place-content-center md:place-items-center m-auto">
       <div className="flex  flex-col md:block md:col-start-1 md:col-end-5 p-7">
@@ -26,7 +26,7 @@ export default function Bienvenida() {
         </div>
         <div className="flex flex-row-reverse justify-between md:flex-row md:justify-start items-center mt-2 py-2">
           <div className="py-2">
-            <ButtonCV text={"Sobre mí"} path={"/about"} />
+            <ButtonCV text={'Sobre mí'} path={'/about'} />
           </div>
           <div className="hidden md:block lg:ml-9">
             <AiOutlineMinus
@@ -79,8 +79,8 @@ export default function Bienvenida() {
         </div>
       </div>
       <div className="hidden md:block md:col-start-5 md:col-end-8 m-5 p-5 max-w-md">
-        <Image src={profilePic} alt={"profile picture"}/>
+        <Image src={profilePic} alt={'profile picture'}/>
       </div>
     </div>
-  );
+  )
 }

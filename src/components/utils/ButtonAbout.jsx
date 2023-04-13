@@ -1,6 +1,6 @@
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight } from 'react-icons/bs'
 
-export default function ButtonAbout({path,text,window,relation}) {
+export default function ButtonAbout ({ path, text, window, relation }) {
   return (
     <div>
       <a
@@ -16,5 +16,5 @@ export default function ButtonAbout({path,text,window,relation}) {
         <div className="hidden md:block pl-2"><BsArrowRight/></div>
       </a>
     </div>
-  );
+  )
 }
