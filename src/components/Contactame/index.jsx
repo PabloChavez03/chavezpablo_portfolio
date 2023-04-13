@@ -54,7 +54,6 @@ export default function Contactame () {
   }
 
   const handleSubmit = (e) => {
-    console.log(process.env.YOUR_SERVICE_ID)
     e.preventDefault()
     emailjs
       .sendForm(

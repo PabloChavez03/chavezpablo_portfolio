@@ -47,7 +47,7 @@
     "titleTecnologies": "Tecnologías",
     "image": {
       "alt": "pi-food"
-    }, 
+    },
     "contentTecnologies": [
       {
         "title": "React",
@@ -83,7 +83,7 @@
     "titleTecnologies": "Tecnologías",
     "image": {
       "alt": "ascend-asesoria-integral"
-    }, 
+    },
     "contentTecnologies": [
       {
         "title": "Astro",
@@ -107,7 +107,7 @@
     "titleTecnologies": "Tecnologías",
     "image": {
       "alt": "marksite"
-    }, 
+    },
     "contentTecnologies": [
       {
         "title": "React",
@@ -128,6 +128,34 @@
       {
         "title": "Node",
         "href": "http://nodejs.org/es/"
+      }
+    ]
+  },
+  {
+    "titleProject": "Webictionary",
+    "content": "Webictionary es un diccionario en línea en inglés que permite a los usuarios buscar y encontrar definiciones de palabras, términos y conceptos en inglés. Este diccionario web es una herramienta útil para cualquier persona que necesite encontrar el significado de una palabra, ya sea en el contexto de la vida cotidiana o en el ámbito profesional.",
+    "urlProject": "https://webictionary.netlify.app/",
+    "urlGithub": "https://github.com/PabloChavez03/webictionary",
+    "titleTecnologies": "Tecnologías",
+    "image": {
+      "alt": "webictionary"
+    },
+    "contentTecnologies": [
+      {
+        "title": "React",
+        "href": "http://es.reactjs.org"
+      },
+      {
+        "title": "Node",
+        "href": "http://nodejs.org/es/"
+      },
+      {
+        "title": "Typescript",
+        "href": "https://www.typescriptlang.org/"
+      },
+      {
+        "title": "Vite",
+        "href": "https://vitejs.dev/"
       }
     ]
   }

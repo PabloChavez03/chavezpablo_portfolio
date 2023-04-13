@@ -8,9 +8,11 @@ import {
   SiSequelize,
   SiPassport,
   SiTailwindcss,
-  SiTypescript,
-  SiVite
+  SiTypescript
 } from 'react-icons/si'
+import {
+  TbBrandVite
+} from 'react-icons/tb'
 import astroPic from '@assets/astro.svg'
 
 export const ICONS_BY_TECH = [
@@ -56,6 +58,6 @@ export const ICONS_BY_TECH = [
   },
   {
     name: 'Vite',
-    icon: <SiVite />
+    icon: <TbBrandVite />
   }
 ]

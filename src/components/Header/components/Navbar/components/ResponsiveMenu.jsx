@@ -4,8 +4,6 @@ import { AiOutlineMenu } from 'react-icons/ai'
 
 const ResponsiveMenu = () => {
   const [oculto, setOculto] = useState(true)
-  const size = globalThis.innerWidth // ancho de la ventana
-  console.log(size)
   return (
     <div className="md:hidden flex justify-center">
       <button aria-label="menu">
