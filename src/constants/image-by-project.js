@@ -2,6 +2,7 @@ import picClothes22 from '@assets/clothes22.png'
 import piFoodPic from '@assets/pifood.png'
 import ascendPic from '@assets/ascendscreen2.jpeg'
 import marksitePic from '@assets/marksite.png'
+import webictionaryPic from '@assets/webictionary.jpeg'
 
 export const IMAGE_BY_PROJECT = [
   {
@@ -19,5 +20,9 @@ export const IMAGE_BY_PROJECT = [
   {
     name: 'marksite',
     src: marksitePic
+  },
+  {
+    name: 'webictionary',
+    src: webictionaryPic
   }
 ]
