@@ -1,7 +1,7 @@
-import Image from "next/image";
-import profileContact from "@assets/pablitoContact.png";
+import Image from 'next/image'
+import profileContact from '@assets/pablitoContact.png'
 
-function ExtraComponent() {
+function ExtraComponent () {
   return (
     <div className="bg-gray-200 h-screen md:h-auto flex items-center px-1 md:px-0 md:bg-transparent md:col-start-5 md:col-end-8">
       <div className="flex flex-col items-center">
@@ -16,7 +16,7 @@ function ExtraComponent() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default ExtraComponent;
+export default ExtraComponent

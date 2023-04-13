@@ -1,4 +1,4 @@
-export default function ButtonSubmit({status}) {
+export default function ButtonSubmit ({ status }) {
   return (
     <div>
       <button
@@ -9,5 +9,5 @@ export default function ButtonSubmit({status}) {
         <span className="relative font-josefin">ENVIAR</span>
       </button>
     </div>
-  );
+  )
 }

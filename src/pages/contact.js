@@ -1,12 +1,12 @@
-import Layout from "../components/Layout";
-import Contactame from "../components/Contactame";
+import Layout from '../components/Layout'
+import Contactame from '../components/Contactame'
 
-export default function Contact() {
+export default function Contact () {
   return (
     <div>
-      <Layout title={"Contáctame"}>
+      <Layout title={'Contáctame'}>
         <Contactame />
       </Layout>
     </div>
-  );
+  )
 }
